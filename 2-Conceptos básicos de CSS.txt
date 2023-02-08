@@ -1,0 +1,63 @@
+Apunte 
+
+Conceptos básicos de CSS
+
+    Hay una manera más fácil de agregar el mismo estilo a un tipo de elemento. Empezamos añadiendo style etiquetas dentro de las head etiquetas.
+
+    Tambien para hacer que las páginas web más grandes sean más manejables, podemos mover nuestro CSS a una hoja de estilo o a un archivo especial solo para diseñar la página web.
+
+    Para incluir una hoja de estilo en un archivo HTML, usamos el linkelemento. <link> es un elemento vacío y va dentro del head elemento.
+    Para saber qué tipo de archivo incluir, la link etiqueta de apertura necesita el relconjunto de atributos usando rel="stylesheet".
+
+    Para especificar la ubicación de la hoja de estilo, establezca el hrefatributo en "style.css".
+    <link rel="stylesheet" href="style.css">
+
+    Código "stylesheet" para que el link elemento sepa qué tipo de archivo incluir.
+
+    En hoja de estilo:
+        Si queremos seleccionar uno o más elementos, podemos establecer un class atributo para los elementos exactos que queremos cambiar.
+        Para establecer una clase como selector en CSS, agregue un punto seguido del nombre de la clase.
+        
+        *Tamaños y bordes: 
+            height, weight para determinar los anchos y largos,
+             border: solid 10px red;
+             border-radiuses una propiedad que redondea las esquinas. funciona en todos los elementos, incluso en las imágenes. 
+             Para convertir una imagen en un círculo, establecemos border-radiusla mitad del ancho de una imagen. ¡Sin embargo, solo funciona si la imagen es un cuadrado!
+        
+        * Construyendo con el modelo de caja
+            Los elementos de una página web son cajas rectangulares con cuatro capas: contenido, relleno, bordes y márgenes.
+            Para cambiar los rellenos en los cuatro lados de un elemento, usamos la padding propiedad.
+            Para cambiar el relleno en el lado izquierdo de un elemento, usamos la padding-left
+            Para cambiar el relleno en la parte superior de un elemento, usamos la padding-top
+            Para cambiar el relleno en la parte inferior de un elemento, usamos la padding-bottom
+
+            Para cambiar la alineación del contenido, usamos la text-align propiedad.
+
+            ¿Qué son los paddings? El espacio entre el contenido y el borde de un elemento.
+
+            Para cambiar los márgenes en los cuatro lados de un elemento, usamos:
+                 margin: 30px;
+                 border: 5px solid;
+            
+            Para cambiar el margen en la parte superior de un elemento, usamos la margin-top
+                margin-top: 20px;
+                margin-bottom: 100px;
+                border: 5px solid;
+
+            Para cambiar el margen en la parte inferior de un elemento, usamos la margin-bottom
+            Para cambiar el margen en el lado izquierdo de un elemento, usamos las margin-left
+            Para cambiar el margen en el lado derecho de un elemento, usamos la margin-right
+
+            Margen y rellenos:
+                Aunque ambos agregan espacio a su alrededor, los márgenes y los rellenos son diferentes.
+                El relleno agrega espacio entre el contenido y el borde, mientras que el margen agrega espacio entre el borde y otros elementos.
+
+            Margen: El espacio alrededor de un elemento, fuera de los rellenos y bordes.
+
+            Podemos usar border-radius para dar a las imágenes un toque único al hacer cosas como redondear las esquinas superior derecha e inferior izquierda a 20px. Ejemplo:
+            
+            img {
+                    border-radius: 0 20px 0 20px;
+                    width: 75px;
+                    height: 75px;
+                    }

@@ -1,0 +1,55 @@
+-Agrupacion de valores  con matrices.
+      Las aplicaciones más grandes agrupan valores similares, como los nombres de tus amigos en una red social.
+
+      .En lugar de crear una variable para el nombre de cada amigo, podemos agrupar todos los valores en una matriz usando [y ].
+      .Los valores de una matriz se denominan elementos . Por ejemplo, "Tom", "Mia"y "Lee"son elementos de esta matriz.
+      .En lugar de crear una variable para el nombre de cada amigo, podemos agrupar todos los valores en una matriz usando [y ].
+      .Los valores de una matriz se denominan elementos
+
+
+
+-Cambio de valores en matrices
+  Profundicemos en los valores que puede almacenar una matriz y cómo podemos actualizarlos. Por ejemplo, cómo una aplicación
+  meteorológica podría realizar un seguimiento de las temperaturas.
+
+      .Cada elemento en una matriz tiene una posición numerada llamada índice.
+      .Los índices comienzan en 0 y aumentan con cada valor adicional. Esto significa que el segundo elemento en temperatures está en el índice 1
+
+            temperatures = [17, 20, 26, 24];
+                             0   1   2   3
+
+      .Para actualizar el valor de temperatura en el segundo índice, acceda a él a través temperatures[2] de , luego use =para asignarle un nuevo valor como 25. Ejemplo:
+
+                      const temperatures = [17, 20, 26, 24];
+                      temperatures[2] = 25;
+
+      . ¿Cómo actualizamos un valor en una matriz? Accedemos al valor por su índice, luego asignamos otro valor
+
+
+-Push & pop matrices.
+    Aprendamos cómo agregar y eliminar valores con matrices.
+
+    .Para agregar un valor como "groceries"a una matriz, codificamos el nombre de la matriz toDo, seguido de un punto . , luego el método de la matriz push("groceries").
+    .Podemos agregar múltiples valores .push()separándolos con una coma ,
+          Ejemplo:
+          toDo.push("groceries", "feed cat");
+
+    . Para eliminar el último elemento de la matriz, codificamos el nombre de la matriz toDo, un punto .y el método de la matriz pop().
+            Ejemplo:
+                const toDo = ["call mom", "dishes"];
+                  toDo.pop();
+
+    .Cuando asignamos toDo.pop()a una variable, la variable almacena el valor que estamos eliminando.
+
+    .¿Qué método usamos para agregar un valor a una matriz? .push()
+    .¿Qué método usamos para eliminar el último elemento de una matriz? .pop()
+
+
+-Decidir con arreglos.
+    Averigüemos cómo podemos contar los elementos en matrices y usar esta información de manera inteligente.
+
+    .Usamos la palabra length después del nombre del arreglo(array) y un punto . para obtener el número de elementos en un arreglo.
+
+    .Las matrices pueden contener cualquier tipo de datos , incluidos números , cadenas y objetos.
+    .Indices en matrices.
+          La indexación de matrices es lo mismo que acceder a un elemento de matriz.

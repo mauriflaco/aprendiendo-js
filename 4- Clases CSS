@@ -1,0 +1,32 @@
+Clases CSS
+    * Elemento de Tramo:
+            El <span> (de Tramo) elemento se utiliza para aplicar estilos a partes del texto.
+    * Grupos de elementos:
+            <div></div>
+    
+        Elementos hijos:
+            Cuando diseñamos un elemento principal, hay algunas propiedades que solo afectan al elemento principal, como border, padding, margin. Pero otras propiedades, como color, se transfieren a los elementos secundarios desde su elemento principal.
+
+        Uso de las clases para diseños
+            dentro del div podemos crear una clase o un id, para hacer modificaciones especificas.
+
+        Agregando color hexagecimales
+            - Podemos agregar colores con un valor hexadecimal. Por ejemplo, negro en hexadecimal es #000000.
+            - Los valores hexadecimales siempre comienzan con un #.
+            - El #va seguido de seis caracteres que son números de 0a 9o letras de Aa F. Por ejemplo, #FFFFFFes de color blanco puro.
+            - Se pueden utilizar para crear un degradado de fondo: 
+                background: linear-gradient(to right, #2193B0, #6DD5ED);
+        
+    *configuracion del tamaño de porcentajes:
+                Los tamaos de imagenes o textos se pueden establecer como porcentaje por pantalla o fijo por pixeles para cualquier pantalla.
+                
+        - Combinar varias clases: (muy bueno la combinacion de multiples clases en 1)
+            Podemos usar tantas clases CSS como queramos para combinar estilos sin tocar el CSS.
+                <p class="color italic bold"> Color, italic, and bold</p>
+
+        - selectores de agrupacion.
+                aplica estilos a varios elementos con la misma regla. Ejemplo:
+                p, .offer , h2
+                            {
+                                font-family: Courier New;
+                            }

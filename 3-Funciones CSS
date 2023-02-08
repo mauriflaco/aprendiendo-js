@@ -1,0 +1,41 @@
+Funciones CSS
+
+La transform propiedad acepta funciones como valores.  Para agregar una función que gire una imagen, codificamos rotate().
+
+img {
+    transform:      rotate(10deg);
+    (propiedad)     (funcion)
+} 
+
+Para girar en sentido contrario a las agujas del reloj, agregamos un signo menos -delante del número en grados.
+
+* Propiedades de css: "elementos borrosos"
+
+    filter:     blur(2px);
+    propiedad   funcion
+   
+    ¿Cómo sabemos que blur()es una función? porque tiene paréntesis
+
+    grayscale convierte las imágenes en diferentes tonos de gris
+        filter: grayscale(100%); 
+
+La opacity()función cambia la visibilidad de los elementos. Cuanto menor sea la opacidad, menos visible se vuelve una imagen.
+        filter:opacity(50%);
+
+
+* Filtros de construccion: 
+    filter: saturate(70%) brightness(90%) contrast(85%);
+
+
+* Personalización de degradados
+        
+        background: linear-gradient (sandyBrown, saddleBrown);
+
+    Para rotar un degradado 90 grados, o de izquierda a derecha, colóquelo 90deg antes de los colores. Ejemplo:
+
+             background: linear-gradient(90deg, yellow, lightGreen);
+
+    La dirección de un gradiente va en el sentido de las agujas del reloj de 0 a 360.
+
+            background: linear-gradient(linen,lightSteelBlue);
+            background: linear-gradient(pink,salmon,darkSalmon);

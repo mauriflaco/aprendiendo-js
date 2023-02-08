@@ -1,0 +1,70 @@
+Fundamentos del diseño CSS - Posicionar elementos en una página web
+
+* Visualizacion de elementos
+        La display propiedad decide si un elemento aparece o no en la misma línea.
+                    a {
+                        display: inline; //el inline decide
+                    }
+
+        Los ejemplos de elementos en línea incluyen a, em y strong. Todos aparecen en la misma línea cuando se codifican uno después del otro.
+
+        el display "block", ocupa todo el ancho de la pantalla
+                    display: block;
+
+        Dado que ocupan todo el ancho de su padre, los block elementos siempre comienzan en una nueva línea.
+
+        elementos del block: "p,h1,div"
+
+        el elemento inline-block tienen de valor por defecto button e imagen. Alinea todos los elementos en linea y en el mismo bloque.
+
+
+*Imagenes Flotantes:
+        primero colocamos un elemento con texto debajo de una imagen.
+        Luego, en la imagen, establecemos la floatpropiedad en lefto right.
+
+        Si queremos agregar otro texto debajo de la imagen y no la queremos asociar, agregamos el elemento clear.
+
+* Posicionamiento relativo
+        Aprendamos cómo colocar elementos en relación con su posición original. Podemos cambiar la posición de los elementos usando la positionpropiedad.
+        Cuando establecemos, cambiamos la posición de un elemento en relación con su position posición original en el flujo normal.
+        Podemos alejar el strongelemento 30pxde la parte superior de su posición original codificando top: 30px.
+
+        Además top, podemos usar las propiedades right, bottom y left para colocar los elementos exactamente donde queremos.
+
+        La codificación left: 30px significa que 30px alejamos el elemento de la izquierda de su posición normal.
+
+* Posicion Absoluta.
+        Aprendamos a colocar elementos en función de los bordes de una página web. establecemos position:absolute.
+
+        Establecer el enlace en position: absolute lo elimina del flujo normal y hace que se superponga a la imagen.
+
+    la propiedad que mantiene la imagen en flujo normal es position: relative;
+    la propiedad que saca la imagen del flujo normal es position: absolute;
+
+
+* Indice Z
+    Aprendamos a controlar elementos superpuestos. Podemos controlar cómo se superponen las imágenes con una propiedad llamada z-index. Establecido z-index en 0, su valor predeterminado.
+
+    Para colocar un elemento detrás de otro, establecemos z-indexun número más bajo. En este caso, el código -1.
+    Los elementos con un z-indexnúmero más alto siempre están al frente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

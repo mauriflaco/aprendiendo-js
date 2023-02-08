@@ -1,0 +1,47 @@
+-Comprender las funciones.
+_CAP1
+      .Los nombres de las funciones deben ser descriptivos y deben indicar el propósito principal de la función.
+      .Las funciones son acciones, por lo que sus nombres deben contener al menos un verbo.
+      .Las funciones que principalmente devuelven un valor sin cambiarlo de ninguna manera comienzan con verbos como get.
+      .Como caso especial, las funciones que devuelven valores booleanos a menudo comienzan con is.
+
+      get     = conseguir
+      display = mostrar
+      is      = booleano
+_CAP2
+      Si bien no tenemos que recordar el código de cada función en un programa, tenemos que pasar la entrada correcta para obtener la salida correcta.
+                    const author = "John Steinbeck";
+                    const title = "Tortilla Flat";
+                    const date = 1935;
+                    displayAuthor(author);
+                    displayTitle(title);
+                    displayYear(date);
+
+      .Los tipos de valores importan cuando las funciones realizan operaciones.
+      .La salida de una función no tiene que ser del mismo tipo que la entrada.
+
+      Ejemplo de funcion:
+          Codifique los valores correctos para obtener un número como salida.
+
+            function snooze(time, snooze) {
+                                          return time + snooze;
+                                          }
+                                          const newAlarmTime = snooze(1300, 15);
+                                          console.log(newAlarmTime);
+
+  _Cap 3
+        .Aprendamos sobre funciones con arreglos(Arrays) como parámetros.
+        .Cuando pasamos matrices a funciones, podemos elegir entre una serie de resultados en función de la matriz.
+        Ejemplo:
+          Muestra el primer elemento de un array:
+                        function displayFirstValue(values) {
+                        console.log(values[0]);}
+                        const temperatures = ["60F", "83F"];
+                        displayFirstValue(temperatures);
+
+        function getSecondName(names) {
+                                      return names [1];
+                                      }
+            const names = ["Flossie", "Wong-Staal"];
+            const secName = getSecondName(names);
+            console.log(secName);

@@ -1,0 +1,37 @@
+* Conceptos básicos de Flexbox
+    - Aprendamos sobre flexbox, una de las características más nuevas de CSS.
+    - Hace que los elementos se adapten en tamaño para adaptarse a su contenedor principal
+    - Para aplicar flexbox a los elementos dentro del contenedor, agregamos:
+                      display: flex;  al contenedor.
+
+      ¡Y ese es el primer paso! Si agregamos más texto dentro de los elementos flexibles, podemos verlos adaptándose para adaptarse a su contenedor.
+
+      - ¿Adónde va la display: flex; propiedad?
+          Va dentro de la regla para el contenedor flexible.
+
+* Uso de la dirección flexible
+      Flexbox nos permite cambiar el diseño del contenido sin tocar el HTML. Presiona los botones para verlo en acción.
+        Para controlar la dirección en la que se muestran los elementos, usamos la flex-direction propiedad.
+
+      También podemos establecer
+                        flex-direction: row;
+                        flex-direction: column;
+
+      Cuando flex-direction se establece en column, los elementos se extienden para llenar el contenedor width
+
+      - Flexbox nos permite cambiar el punto de inicio de los elementos flexibles, lo que nos permite revertir fácilmente un diseño si alguna vez lo necesitamos.
+
+        .Para cambiar la posición inicial de los elementos flexibles al lado derecho de un contenedor, podemos usar row-reverse.
+              flex-direction: row-reverse;
+
+                flex-direction: row-reverse significa que los elementos comienzan desde la derecha del contenedor y se muestran en el orden en que están en el HTML.
+
+
+        .Si queremos invertir la dirección de las columnas, podemos usar column-reverse.
+                flex-direction: column-reverse significa que los elementos comienzan desde la parte inferior del contenedor
+
+* Ejes de Flexbox
+      flex-direction define lo que se conoce como el eje principal , una línea imaginaria que se refiere a la dirección y orientación de los elementos flexibles.
+
+
+Los contenedores Flexbox también tienen un eje transversal , que es una línea imaginaria perpendicular al eje principal.

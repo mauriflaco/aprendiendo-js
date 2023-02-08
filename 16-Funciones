@@ -1,0 +1,69 @@
+-Reutilizacion de codigo con funciones.
+      En lugar de crear muchos códigos diferentes, los sitios web usan funciones para agrupar códigos relacionados y realizar la tarea en un solo lugar.
+
+          .Para comenzar a agrupar el código relacionado, comenzamos codificando la palabra clave function.
+          .Luego seguido de paréntesis ( )
+          .Las llaves { } marcan el bloque de código que pertenece a la función.
+          .El código que queremos agrupar va entre llaves
+          .Para ejecutar el código, necesitamos llamar a la función. Lo hacemos codificando su nombre seguido de paréntesis, como greetUser();.
+
+
+  -Creacion de Parametros.
+      A veces, las funciones necesitan información específica para ayudarlas a realizar sus tareas.
+
+          .Para pasar un valor a una función, primero agregamos una variable llamada parámetro dentro de los paréntesis de la función.
+          .El parámetro actúa como una variable que almacena un valor. Sin embargo, todavía no tiene un valor dentro.
+          .Para pasar un valor para la variable, lo colocamos entre paréntesis cuando llamamos a la función.
+          .En lugar de escribir dos funciones, podemos pasar información específica a una sola función, sin repetir el código. Aquí hay un vistazo.
+                Ejemplo:
+                        function greet(name) {
+                                                console.log("Hello, " + name);
+                                                }
+                                greet("April");
+                                greet("Leslie");
+
+          .¿A dónde van los parámetros? Los parámetros van entre paréntesis de la función que estamos creando.
+          .¿Qué hace un parámetro?      Actúa como una variable especial que almacena un valor.
+          .¿Cómo pasamos un valor para el parámetro a la función? Llamamos a la función con el valor entre paréntesis
+
+          Ejemplos:
+                      function greet(name) {                    function doubleNumber(number) {
+                      console.log("Hello, " + name);            const result = number * 2;
+                      }                                         console.log(result);
+                      greet("Johanna");                         }
+                                                                doubleNumber(5);
+
+
+
+-Valores Devueltos (Return values)
+      Una función puede devolver un valor al código que la llamó. Esta página web devuelve un valor al código que la llamó para ayudar a realizar su tarea.
+
+        .Para devolver algo de una función, agregamos la return palabra clave seguida del valor a devolver, como aquí con return age;.
+        .Una función puede devolver cualquier tipo de valor, como una cadena, un número o un valor booleano. Esta función devuelve el valor numérico dentro de result.
+        .Solo podemos devolver un único valor.
+        .También podemos almacenar el valor de retorno en una variable.
+        .Si no incluimos una return declaración, la función devuelve el valor undefineden su lugar.
+
+
+          Ejemplo de funcion:
+                              function addGreeting(user) {
+                                                          const greeting = "Greetings " + user;
+                                                          return greeting;
+                                                          }
+                              const result = addGreeting("Saoirse");
+                              console.log(result);
+
+
+-Uso de multiples Parametros
+    Las funciones necesitan múltiples parámetros para trabajar con dos o más datos, como un nombre y apellido.
+    Para agregar más parámetros a una función, agregamos una coma y el nombre del siguiente parámetro.
+        .Después de pasar un segundo valor, podemos usar el nuevo parámetro en nuestra función. Muestre el segundo parámetro agregando + lastName dentro de la función. Ejemplo:
+
+
+        function createID(name, year) {
+                                        return name + year + "@hutmail.com";
+                                        }
+        const email = createID("jo", "1998");
+        console.log(email);
+
+        .Los valores se pasan a una función en el mismo orden en que lo hacen los parámetros

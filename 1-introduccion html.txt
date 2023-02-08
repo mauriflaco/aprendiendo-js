@@ -1,0 +1,181 @@
+Apunte de Introduccion a Desarrollo Web 
+
+
+primer clase introduccion:
+
+<button> creacion de botones
+    dentro de los botones se puede ingresar otras etiquetas, como por ejemplo de estilos.
+
+
+Enlaces:
+        <a> </a> la "a" significa ancla
+        Para vincular el texto a una página web, agregamos href=""
+        hrefes un atributo . Todos los atributos tienen dos cosas en común: brindan información adicional y van dentro de la etiqueta de apertura
+
+        attributes proporcionan informacion adicional a las etiquetas
+
+_______________________________________________________________________________________________________
+
+Clase II: 
+    adicion de imagenes:    
+    <img>   sin etiqueta de cierre. 
+            Para mostrar una imagen, una etiqueta de imagen necesita el srcatributo
+
+
+        mostrar una imagen con src es buscar un archivo local.
+
+        Mientras que con el https (las urls) es buscar una imagen de un servidor de internet.
+
+Clase III: 
+
+En HTML, usamos el elemento de entrada para obtener todo tipo de entrada del usuario, como correos electrónicos, contraseñas, fechas y más.
+Creamos elementos de entrada usando la <input> etiqueta vacía. 
+
+
+    El placeholder:
+                atributo sugiere lo que un usuario debe escribir en el campo. Ejemplo: 
+                <input placeholder ="Email">
+
+    El type: 
+        
+        atributo especifica el tipo de entrada. Por ejemplo, podemos ocultar lo que escriben los usuarios para mayor seguridad con type="password".
+        
+        No es necesario memorizar todos los tipos de entrada. Te daremos práctica para los más interesantes como range, checkbox, datey color.
+
+Clase IV: elementos de agrupacion
+
+Los desarrolladores reúnen elementos relacionados en grupos para crear diseños únicos para sus sitios web como el que se muestra a continuación.
+
+        Para crear un grupo de elementos, rodeamos los elementos con <div>y </div>etiquetas.
+        
+        ¿Cómo se llama un elemento dentro de otro elemento? Un elemento anidado.
+
+
+
+Clase V: Listas de construccion
+    
+            ¿Para qué sirven las listas?
+                Organización de la información en una página web
+
+            Las listas en HTML se parecen mucho a las listas de compras o de tareas pendientes. Son una excelente herramienta para organizar la información en una página web.
+
+            Una lista ordenada se compone de <ol>y </ol> etiquetas. La letra "O" representa "ordered" y la letra L representa "list".
+
+            Para agregar un elemento de lista , agregamos texto entre las etiquetas <li> y </li>En este caso, la L representa "list"y la I representa "item".
+
+            Para que las listas se muestren correctamente, los elementos de la lista deben estar dentro del elemento de la lista ordenada.
+
+
+
+Clase VI: Listas de construccion
+
+            Los elementos de la lista pueden contener más que solo texto. También pueden contener imágenes o enlaces.
+            El <li> Enumera a la lista 
+
+
+
+
+
+Clase VII: Vinculacion de las paginas Web
+            
+                Hay dos tipos de vinculacion, una ingresando de forma local al html y otra ingresando la ruta de la url.
+
+
+Clase VIII: Creacion de Formularios
+
+Un form elemento con diferentes input elementos y un botón de enviar dentro conforman la estructura del formulario. Codifica la palabra form.
+            <form>
+                Username: <input type="text"><br>
+                <button></button>
+            </form>
+
+Para recopilar la entrada del usuario, agregamos inputelementos dentro del formelemento. Escriba la palabra inputen el segundo campo.            
+
+
+Usamos conjuntos de campos para agrupar entradas relacionadas. A fieldsetmostrará un borde alrededor de los elementos relacionados. Codifica los fieldsetelementos.
+<fieldset></fieldset>
+
+Colocamos un legend elemento dentro del fieldset elemento para etiquetar todo el conjunto de campos. Rodea el segundo fieldset con el legend elemento.
+<legend></legend>
+
+Para enviar la información de entrada, agregamos un buttonelemento dentro del archivo form. Codifique un buttoncon el texto "Registrarse" en la parte inferior del formulario.
+
+En los formularios, las etiquetas son importantes para definir las entradas esperadas. 
+<label></label>
+
+<label for="email">Email: </label>  for= 
+¿Por qué usamos el foratributo en un label elemento?Para vincular entre el elemento de entrada y el elemento de etiqueta"
+<input id="email" type="email">     id=
+
+
+Clase IX:  elementos html semánticos
+                        para darle más significado al texto en una página web.
+
+                        <time></time>   define elementos de tiempo
+                        <address></address>     define elementos de direcciones
+                        <abbr></abbr>   abrevia elementos
+                        <header></header>   define elementos del header
+                        <footer></footer>   define elementos del footer
+                        <main></main>   define el contenido específico de la página web en particular. Es el contenido principal de una página web.
+                        <section></section>  definir un grupo de contenido con un solo tema, como la información de contacto en esta página
+                        <nav></nav>     Usamos navpara definir un grupo de elementos que ayudan a los usuarios a navegar fuera de la página actual, como esta lista de enlaces de redes sociales.
+                        <details></details>    agrega una descripcion
+                        <summary></summary>    es un resumen de una descripción más larga
+                        <figcaption></figcaption>       definir un texto como pie de foto de una figura
+                        <figure></figure>       agrupa una imagen y un texto en un mismo elemento.  
+
+Clase X: Accesibilidad 
+La accesibilidad es la práctica de garantizar que los sitios web sean accesibles para la mayor cantidad de usuarios posible.
+
+Algunos usuarios pueden necesitar tecnologías de asistencia como lectores de pantalla o dispositivos de zoom que necesitan soporte de codificación para acceder al contenido.
+
+Pero la accesibilidad no se trata solo de lectores de pantalla. También ayuda a los usuarios que usan diferentes dispositivos o tienen conexiones a Internet lentas.
+
+Una de las formas de codificar sitios web accesibles es mediante el uso de HTML semántico.
+
+
+1. Separar bien los h1.
+2. Elegir bien los elementos de una pagina web. No utilizar para todo el div.
+3. lang="en": Definir el lenguaje del sitio
+4. alt, es un texto alternativo a la imagen
+5. usar palabras claves, descriptivas.
+
+
+Ahora que conoce los conceptos básicos de accesibilidad, aprendamos sobre los estándares de accesibilidad.
+
+WAI-ARIAsignifica Web Accessibility Initiative-Accessible Rich Internet Applications y es una especificación para los estándares de accesibilidad
+
+
+
+role="" Los atributos de rol brindan significado a las tecnologías de asistencia, pero no cambian nada visualmente.
+        Ayudan a asignar significado a los elementos, como este "banner"rol que le dice al lector de pantalla que es el encabezado de la página.
+
+        *  Otro papel útil es el "comment"papel. Implica una reacción a algún contenido. role ="comment"
+        * El "contentinfo"rol indica que hay un pie de página al final de la página. Contiene información de derechos de autor, contacto o privacidad. (copyright)
+        * El "alert" rol advierte a los usuarios sobre eventos o cambios en el contenido
+
+
+Clase I, episodio 2: Estilos (CSS)
+Para agregar estilo a un elemento HTML, comience con el styleatributo.
+
+Si queremos establecer un estilo, por ejemplo, el color, lo usamos color: pink; Ej.:   
+<h1 style="color: pink;">Flowers by Ana</h1>
+
+Cuando agregamos algo como color: green;, estamos agregando una declaración. Una declaración se hace a partir de una propiedad, como color, y un valor , como pink. La propiedad siempre es lo primero. 
+
+
+
+Para cambiar el tamaño del texto, usamos la font-sizepropiedad.
+tipo de fuente para un elemento, comience agregando la font-familypropiedad.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+Contenedores Flexbox
+
+  - Justificacion de Grupos de elementos
+      Podemos usar Flexbox para justificar elementos dentro de un contenedor principal. Justificar significa cambiar la forma en que los elementos se agrupan y se espacian en el eje principal . Para justificar elementos flexibles, usamos la justify-content.
+
+      flex-start significa que todos los elementos flexibles se agrupan al principio del contenedor.
+      flex-end significa que todos los elementos flexibles se agrupan al final del contenedor.
+
+      Si flex-direction se establece en column, flex-end significa que todo el contenido se agrupa en la parte inferior del contenedor
+
+      Si queremos tener elementos bien espaciados dentro de un contenedor, usamos el space-around
+      Para mantener el espacio entre los artículos y tener el primero y el último cerca de los lados del contenedor, usamos el space-between
+
+      Para alinear elementos a lo largo del eje transversal, usamos la align-items propiedad. El valor predeterminado que tienen los elementos flexibles align-items es stretch. Esta configuración hace que los elementos llenen todo el eje transversal.
+
+      Si flex-direction se establece en column, el stretch valor hace que los elementos llenen todo el ancho del contenedor porque el eje transversal es horizontal.
+
+
+  - Envoltura de elementos flexibles:
+      El valor predeterminado para flex-wrap es nowrap. Eso significa que si los objetos ya no pueden encogerse dentro del contenedor, se desbordan fuera de él.
+      Usamos flex-wrap: wrap; para hacer que los artículos comiencen en una nueva línea cuando ya no encajan.
+      Si queremos que los artículos que no caben vayan a la parte superior del contenedor en lugar de a la parte inferior, usamos wrap-reverse
+
+      Como antes, flex-wrap funciona tanto para columnas como para filas. Invirtamos la column dirección.
+          flex-direction: column;
+          flex-wrap: wrap-reverse;
+
+
+
+  - Alineacion de filas envueltas
+    Para controlar el espacio alrededor de las filas envueltas de elementos , usamos la align-content propiedad. Esto afecta las filas a lo largo del eje transversal.
+    El valor predeterminado para align-content es stretch, que hace que las filas de elementos flexibles se estiren en el eje transversal.
+
+    align-content: flex-start   Para hacer que las filas envueltas comiencen desde arriba.
+    align-content: flex-end;    empuja todas las filas hasta el final del contenedor.
+    align-content: center       agrupa todas las filas en el centro del eje transversal.
+
+    Para agregar espacio entre filas a lo largo del eje transversal, podemos usar el space-around valor.
+          display: flex;
+          flex-wrap: wrap;
+          align-content:
+          space-around;
+
+    Para agregar espacio entre filas pero eliminar el espacio cerca de los bordes, usamos space-between.

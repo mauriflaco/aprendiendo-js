@@ -1,0 +1,41 @@
+-Tomando Decisiones
+      Los programas inteligentes usan booleanos para tomar decisiones sobre si ejecutar líneas de código u omitirlas .
+      ¿Cómo podemos escribir código que se adapte a diferentes situaciones? Mediante el uso de la sentencia if .
+
+      .La instrucción if ejecuta código solo si el valor booleano en el que se basa es true. Es como decir, si algo es verdad, entonces haz esto.
+
+      .Los valores como true se llaman condiciones. Las declaraciones que dependen de condiciones se llaman condicionales .
+
+      .Las condiciones deciden si el código se ejecuta o se omite. Vienen entre paréntesis.
+
+      .Las declaraciones no deciden omitir o ejecutar todo el código. Solo toman decisiones sobre una pieza de código. Esta pieza de código se llama bloque de código. Lo escribimos entre llaves {}.
+
+      .Un bloque de código puede ser más que una sola línea. Podemos añadir tantas líneas como queramos.
+
+      .En lugar de usar el valor booleano true, podemos guardarlo en una variable y usarlo como condición.
+
+      .El uso de un conjunto de variables false nos permite omitir el bloque de código.
+
+
+-Condiciones de uso.
+    .Para tomar decisiones más inteligentes en nuestros programas, necesitamos if declaraciones que se basen en condiciones más inteligentes, como en la aplicación de trivia a continuación.
+    .Las declaraciones funcionan con todos los operadores de comparación que hemos explorado hasta ahora.
+    .Las declaraciones también se pueden usar === para comparar variables
+    .¿Por qué usamos comparaciones con if declaraciones? Para tomar decisiones más inteligentes sobre ejecutar u omitir código
+    . ¿Cómo podemos evitar reescribir la misma comparación varias veces? Podemos guardar su resultado en una variable y reutilizar la variable
+
+
+
+-Codificacion de declaraciones Else.
+      .En lugar de crear dos if declaraciones, usamos una declaración if/ else para lograr el mismo resultado.
+      .La else declaración no necesita su propia condición. Eso es porque maneja los casos donde la if condición es false.
+      .¿Qué es una else declaración? Un condicional que se ejecuta cuando la if condicion de la instruccion es false.
+
+
+-Incorporando else if.
+
+      .Para una condición más específica, como si hour es mayor o igual a 12 pero menor que 17, podemos codificar else if (hour < 17)en su lugar.
+
+      . Siempre que vayan antes de la else declaración, podemos agregar tantas else if declaraciones como queramos.
+
+      . Podemos codificar una else declaración para ejecutar su bloque de código cuando las condiciones if y else if son false.

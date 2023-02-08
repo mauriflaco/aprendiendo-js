@@ -1,0 +1,158 @@
+Creacion de una cuadricula Css
+
+    CSS Grid es un sistema de diseño que nos permite agregar elementos tanto horizontal como verticalmente en una página web. Eso es diferente de Flexbox, donde solo podíamos colocar elementos en una dimensión a la vez. Presiona los botones para ver las diferencias.
+
+    Para usar CSS Grid, primero debemos crear un elemento principal que actúe como contenedor. Luego, agregamos la grid-itemclase a los elementos dentro del contenedor.
+
+                <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+
+    Para aplicar CSS Grid al contenedor, debemos comenzar con la display propiedad.
+    .grid-container {
+                      display: grid;
+                      background-color: #E0F6FF;
+                      border: 1px dashed #1E96FF;
+                      }
+
+    Luego podemos establecer el tamaño de cada columna por separado según nuestro diseño
+
+        .grid-container {
+                           display: grid;
+                           grid-template-columns: 50px  50px  120px;
+                           background-color: #E0F6FF;
+                           border: 1px dashed #1E96FF;
+                          }
+
+  - Creacion de columnas en una cuadricula
+      Aprendamos cómo configurar el tamaño y la cantidad de columnas de la cuadrícula.
+
+      Grid tiene una unidad de medida especial llamada fr, abreviatura de unidad fraccionaria . fr distribuye el espacio disponible del contenedor en fracciones.
+
+            Si combinamos fr con otras unidades como px, el espacio que queda después de agregar el px elemento es lo que se distribuye en fracciones. código 50px 1fr 1fr
+
+            Grid tiene un atajo para definir columnas rápidamente, y esa es la repeat()función. Por ejemplo, repeat(3, 1fr)significa 3 columnas de 1fr cada uno.
+
+   - Creacion de Filas de cuadriculas
+
+      CSS Grid nos brinda control sobre las filas, como ajustar su tamaño y ubicación dentro de una cuadrícula.
+      Usamos la grid-template-rows propiedad para definir las filas de la cuadrícula.
+
+            grid-template-rows: 50px 80px 100px;
+
+      También podemos usar valores porcentuales para las filas, pero esto solo funciona si el contenedor tiene un tamaño establecido, como 300px en este caso.
+          .grid-container {
+                          display: grid;
+                          grid-template-rows: 40% 60%;
+                          background-color: #E0F6FF;
+                          border: 1px dashed #1E96FF;
+                          height: 300px;
+                          }
+
+      Podemos combinar px unidades y fr unidades juntas si es necesario.
+      Podemos usar la repeat()función para escribir menos.
+        grid-template-rows: repeat(3, 40px);
+
+
+
+    - Definicion de filas/columnas de cuadricula
+        Hasta ahora hemos aprendido a crear filas y columnas de cuadrícula por separado. Ahora aprendamos cómo crear ambos al mismo tiempo como se muestra a continuación.
+
+        Usamos la grid-template propiedad para definir filas y columnas de cuadrícula en una línea.
+
+            grid-template: 50px 50px / 150px 150px;
+
+        Al usar grid-template, los valores a la izquierda de la barra inclinada son filas y los de la derecha son columnas
+
+        Si queremos, podemos incluso mezclar diferentes unidades entre sí. Código 50px 50px / 1fr 1fr para hacer que las columnas solo se ajusten al tamaño de los contenedores.
+
+
+      - Grid Gaps (brechas de rejillas)
+          De forma predeterminada, los elementos de la cuadrícula no tienen ningún espacio entre ellos. Aprendamos la forma correcta de agregar espacios entre los elementos de la cuadrícula.
+
+          Para crear espacios entre los elementos de la cuadrícula, usamos gaps. Los espacios son diferentes de los márgenes, que agregan espacio en todos los lados de un elemento.
+
+          Para crear espacios iguales entre las filas de la cuadrícula, usamos la row-gap propiedad. Si queremos espacios iguales entre columnas, usamos la column-gap propiedad.
+
+                row-gap: 5px;
+                column-gap: 5px;
+
+
+          Para agregar espacios entre filas y columnas, usamos la gap abreviatura. significa que sumamos 5px entre filas y 10px entre columnas.
+              gap: 5px 10px
+
+
+          Para crear espacios de fila y columna iguales, establecemos gap un solo valor.
+              gap: 10px;
+
+
+      - Definicion de tamaño de un elemento de cuadricula
+          Hasta ahora, hemos agregado elementos de cuadrícula que abarcan una fila o columna. Aprendamos a crear un elemento de cuadrícula que abarque varias filas o columnas.
+
+          La grid-column propiedad se utiliza para expandir un elemento de cuadrícula en varias columnas.
+
+          Usamos el término span para hablar de cuánto expandimos un elemento de la cuadrícula. En código, span 2 significa que dividimos el elemento de cuadrícula en dos columnas.
+
+
+          Si queremos establecer el tamaño de un elemento de cuadrícula en filas, usamos la grid-row propiedad.
+
+
+
+      - Creacion de areas con nombre
+          Ahora aprendamos un nuevo método para colocar elementos de cuadrícula en una cuadrícula. Crearemos áreas con nombre en la cuadrícula y luego asignaremos elementos de cuadrícula a esas áreas.
+
+          Usamos la grid-area propiedad para asignar un nombre de área. Hacemos esto dentro de la regla CSS para cada elemento.
+
+          Para definir cómo se distribuyen las áreas de cuadrícula en la cuadrícula, usamos la grid-template-areas propiedad dentro de la grid-container regla.
+
+          Si queremos abarcar un elemento de cuadrícula en varias columnas de cuadrícula, repetimos el nombre del elemento de cuadrícula.
+              Ejemplo: grid-template-areas: "item1 item1 item2";
+
+
+          Si usamos .o ...podemos dejar un área de cuadrícula vacía. Dejemos vacías la primera y la tercera columna de la cuadrícula.
+              Ejemplo:  grid-template-areas: ". item1 . item2";
+
+
+       - Secciones que utilizan areas con nombre
+          Podemos usar grid para crear diferentes secciones de la página web como la que se muestra a continuación. Aprendamos a usar áreas con nombre para crear tales secciones. (header, sidebar, menu content, footer)
+
+          Para nombrar los elementos de la cuadrícula, codificamos la grid-area propiedad dentro de la regla CSS de cada elemento y asignamos los nombres de área apropiados.
+
+          Hemos cubierto un diseño de sitio web muy básico, pero CSS Grid se puede usar para hacer diseños mucho más potentes según nuestras necesidades: Ejemplo:
+          .container {
+                       display: grid;
+                       grid-gap: 5px;
+                       grid-template-areas: "header header header header"    //el header abarca 4 columnas
+                                            "sidebar main main main"
+                                            "sidebar photo photo button"
+                                            "footer footer footer footer";
+                      }
+
+
+
+
+
+      - Alineacion de elementos de cuadricula
+            Usamos la justify-items propiedad para alinear los elementos de la cuadrícula a lo largo del eje de la fila. El valor predeterminado stretch significa que llenan todo el espacio disponible.
+
+
+
+       - USANDO CSS GRID Y FLEXBOX
+             CSS Grid es excelente para combinar filas y columnas, lo que lo hace ideal para crear un diseño general.
+             .container {
+                          display:grid;
+                          grid-gap: 5px;
+                          grid-template-areas:
+                          "header header header header"
+                          "sidebar main main main"
+                          "sidebar photo photo button"
+                          "footer footer footer footer";
+                          }
+
+            Sin embargo, usar solo CSS Grid limita la forma en que podemos mostrar los elementos.
+
+            La mejor forma de mostrar los elementos mas ordenados es con flexbox.
+              display: flex;
+              

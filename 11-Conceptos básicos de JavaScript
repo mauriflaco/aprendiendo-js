@@ -1,0 +1,58 @@
+- Creacion de variables
+    JavaScript es un lenguaje flexible que impulsa aplicaciones y sitios web dinámicos.
+
+    .Los sitios web dinámicos necesitan recordar información para mostrar o cambiar. Para eso, JavaScript tiene variables. Al igual que las cajas móviles, las variables tienen contenido y nombres que nos dicen qué hay dentro.
+
+      . Usamos let, y const para crear variables. Usamos nombres descriptivos para saber que contienen.
+      . Para crear nombres de variables con varias palabras, usamos camel case.
+      . Los nombres de variables también pueden contener números.
+      . usamos el = signo para almacenar un valor dentro de ella.
+
+      ¿Cómo sabemos que un valor es una cadena? es una palabra entre comillas dobles.
+
+      Usamos const para declarar variables cuyos valores se supone que no deben cambiar. Si tratamos de actualizar un valor almacenado en una const variable. Obtendremos un error.
+
+      Para que sea obvio que una variable es de tipo const y no debe cambiar, opcionalmente podemos nombrarla con letras mayúsculas. (creando una variable en COMPLETA MAYUSCULAS te das cuenta q es const)
+
+      No podemos usar camelCase si usamos este estándar en mayúsculas, por lo que usamos mayúsculas snake_case para nombrar variables con más de una palabra.
+
+      Cual debemos usar como predeterminado: const
+
+      .Con la instrucción especial console.log(), le decimos a la computadora que muestre un valor en un área llamada consola.
+
+
+
+
+ - Uso de la variable
+    Ya vimos que let las variables, a diferencia de, const pueden cambiar y actualizar los valores que almacenan.
+
+        . También podemos dar a las variables los valores de otras variables asignando una variable a la otra.
+        . Podemos agregar valores de cadena junto con un + signo. Llamamos expresión a la suma de valores de cadena porque crea un único valor de cadena.
+        . Dado que las expresiones se convierten en valores, podemos dárselos a las variables como si fueran valores.
+        . Cuando almacenamos números en variables, también podemos usar las variables para los cálculos.
+
+
+
+
+ - Usando Veradero y Falso
+  Hay un valor especial que no es ni una cadena ni un número: true.
+  No hay comillas a su alrededor y no es un valor numérico.
+
+      . true es excelente para situaciones como verificar si un interruptor está encendido o si una función está habilitada. ejemplos variables de un video de reproduccion.
+      . false es otro valor especial y lo contrario de true. Podemos usarlo como true.
+      . Un ! signo delante de true hace que la expresión resulte en false. Si algo no es verdad, tiene que ser falso.
+          El ! signo es el operador de negación. Convierte los valores en su contrario.
+
+
+
+- Comprobacion de la igualdad de numeros
+
+    . Aprendimos a crear y almacenar valores, pero ¿cómo los comparamos?
+        Para comparar si dos números son iguales, usamos el operador de igualdad , ===.
+            Al comparar, solo hay dos resultados: true o false.
+
+    . Cuando comparamos los mismos números con el operador de igualdad, el resultado es true.
+    . Para verificar si un número no es igual a otro número, usamos el operador de desigualdad , !==.
+    . **Las variables también pueden almacenar el resultado de las comparaciones de igualdad**.
+    . Podemos comparar valores con variables y variables con otras variables.
+    .

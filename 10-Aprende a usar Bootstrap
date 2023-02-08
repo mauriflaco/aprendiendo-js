@@ -1,0 +1,92 @@
+Creacion de una cuadricula de bootstrap
+
+  Ahora aprendamos cómo crear un diseño receptivo usando Bootstrap, una biblioteca CSS popular que se usa para diseñar y crear sitios web.
+
+  Bootstrap es una biblioteca de clases de CSS que podemos usar para diseñar nuestro sitio web.
+
+   Para importar una biblioteca CSS, primero debemos agregar una <link> etiqueta y el href atributo.
+
+  Podemos usar un CDN para importar Bootstrap desde un servidor remoto. Una CDN es una red de servidores globales que entrega contenido web rápidamente.
+
+  Establezcamos el enlace al archivo Bootstrap que se encuentra en el CDN como el href valor.
+          https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+
+
+    Bootstrap diseña elementos con la ayuda de clases predefinidas. Agreguemos nuestra primera clase de Bootstrap.
+
+    La container clase contiene elementos, agrega relleno y alinea las filas de Bootstrap dentro de una página web.
+    Hay una serie de clases de Bootstrap que son útiles para hacer que los sitios web se adapten a pantallas más grandes o más pequeñas.
+    Podemos usar la container-fluid clase para hacer que los elementos de la página web abarquen todo el ancho de una pantalla más grande
+
+
+- Creación de barras de navegación Bootstrap
+
+      Usemos Bootstrap para aprender cómo crear una barra de navegación básica que guiará a los usuarios a diferentes partes de una página web.
+      Para comenzar a crear una barra de navegación usando Bootstrap, primero debemos codificar un <nav> elemento.
+
+      Luego agregamos una navbar clase al <nav> elemento para convertirlo en una barra de navegación estándar.
+      Para que la barra de navegación responda tanto en el escritorio como en el móvil, agregamos una navbar-expand-md clase al <nav> elemento.
+
+      . Que hace el nav elemento?? Contiene todos los componentes de la barra de navegacion.
+
+      .¿Qué hace la navbar-expand-md clase? Hace que la barra de navegacion responda tanto en el escritorio como en el movil.
+
+      ¿Qué clase de Bootstrap se usa para agregar la imagen del logotipo a una barra de navegación? navbar-brand
+
+      ¿Qué clase transforma una lista normal en un menú Bootstrap? navbar-nav
+
+      ¿Dónde usamos la nav-link clase? en <a> elementos
+
+- Diseño con bootstrap
+
+    Aprendamos cómo crear la estructura de un sitio web utilizando Bootstrap Grid para crear filas y columnas.
+    class = row
+    class = col
+
+    Para crear espacio en el lado izquierdo de una columna, usamos una offset-clase. Por ejemplo, offset-4 crea un espacio que abarca 4 columnas.
+
+
+
+- Diseñar contenido con Bootstrap
+      Aprendamos a usar las clases predefinidas de Bootstrap para diseñar el contenido de la página web. Hemos diseñado la página web a continuación con clases de Bootstrap.
+
+    lead clase hace que un párrafo se destaque usando Bootstrap  predefinida al <p>elemento.
+    text-lowercase se usa la clase para transformar en mayúsculas.
+    text-uppercase se usa la clase para transformar en miinusculas.
+    text-primary clase para cambiar el color del texto a azul.
+
+    Otras clases de Bootstrap como y crean márgenes, rellenos y sombras m-.
+    Agregue las clases e in y una sombra usando la clase in. p-shadow p-2 m-2 h1 shadow p
+
+
+
+- Uso de botones Bootstrap
+      Creamos un botón Bootstrap agregando una btn clase a un elemento <button>, <input>o <a>.
+      btn-success Para indicar alguna acción deseada cuando se hace clic en el botón.
+      btn-danger  La clase se usa cuando queremos indicar algún peligro cuando se hace clic en el botón. ¿desea eliminar?
+
+      btn-lg hacer que un botón de arranque sea más grande o más pequeño, agregamos una clase btn-lg o adicional btn-sm.
+
+
+
+Trabajar con tarjetas
+Ahora aprendamos cómo crear tarjetas Bootstrap que muestren un conjunto de contenido mixto, como texto e imágenes en conjunto.
+
+Para crear una tarjeta Bootstrap, comenzamos codificando un div elemento y dándole la clase card.
+      <div class= "card"> Card components will go here </div>
+
+
+Si queremos tener una imagen en la parte superior de la tarjeta, agregamos un <img>elemento en la tarjeta y le damos la clase card-img-top.
+
+Para crear una sección de cuerpo de tarjeta que contenga un encabezado y texto, agregamos un div elemento en la tarjeta y le damos una clase card-body.
+Ejemplo:
+
+      <div class="card m-2">
+      <div class="card-header">Featured Trips</div>
+      <img class="card-img-top" src="https://mimo.app/i/holiday.png">
+      <div class="card-body">
+      <h5 class="card-title">Mauritius Holiday</h5>
+      <p class="card-text">Vacation in Mauritius is where the perfect holiday starts.</p>
+      </div>
+      <div class="card-footer">2 days ago</div>
+      </div>

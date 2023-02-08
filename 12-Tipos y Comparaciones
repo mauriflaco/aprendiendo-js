@@ -1,0 +1,26 @@
+ - Comparando numeros
+          < , > , = , === , =< , >=
+         podemos usar un operador de comparación para comparar una variable con otra variable, como en min <= max.
+
+    .Comparando cadenas
+        Podemos usar comparaciones para comprobar si una cadena es igual o no a otra cadena.
+        Para verificar si una cadena es igual a otra cadena, podemos usar el operador de igualdad estricta , ===.
+        También podemos comparar variables que almacenan cadenas entre sí, como en fruit1 === fruit2
+
+        Para verificar si una cadena no es igual a otra cadena, usamos el operador de desigualdad estricta , !==.
+
+    .Descubriendo "tipos"
+        + es el signo de unir o agregar. Al unir dos variables, podemos obtener diferentes resultados dependiendo de sus tipos.
+        Al unir números con cadenas, el número se transformará automáticamente en una cadena.
+        También podemos unir cadenas y booleanos. const result = "You passed: " + true;
+
+
+   . Operadores Logicos
+          Con operadores lógicos, podemos conectar dos o más condiciones para decidir un resultado.
+
+          El operador AND && regresa true solo si todas las condiciones son true.
+          También puede almacenar el resultado de una expresión lógica en una variable.
+
+          usamos el operador OR || , que regresa true siempre que al menos una de las condiciones sea true.
+          Sabemos que el operador NOT! niega un valor booleano. Eso significa que regresa truesi una condición es falsey viceversa.
+          

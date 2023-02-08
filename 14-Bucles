@@ -1,0 +1,82 @@
+-Variables Autoasignables
+      .Aprendamos un nuevo concepto que explica cómo las variables realizan un seguimiento de cosas como agregar o quitar dólares de una billetera.
+
+      .La autoasignación es cuando establecemos una variable en su propio valor
+      .Dado que podemos autoasignar variables, podemos aumentar o disminuir las variables establecidas en números
+      .Las variables de autoasignación nos permiten realizar un seguimiento de los datos que cambian con el tiempo.
+      .Las variables establecidas en cadenas funcionan de la misma manera. Intente configurar nameInfoen nameInfo + " John".
+          Ejemplo:
+                    let nameInfo = "Account name:";
+                      nameInfo = nameInfo + " Elton";
+                      nameInfo = nameInfo + " John";
+                      console.log(nameInfo);
+
+      .¿Por qué la autoasignación es un concepto de programación tan poderoso? Porque nos permite rastrear datos que cambian con el tiempo.
+
+
+
+-Asignacion de operadores
+      .Dado que la autoasignación es una herramienta poderosa para crear programas, aprendamos algunos operadores que nos ayudarán a escribir código más rápido.
+
+      .Sabemos que podemos agregar 1a una variable escribiendo el nombre de la variable. En lugar de reescribir el nombre de la variable, podemos usar el += operador para agregar un número con likes += 1.
+
+      .Suma diez al valor de la variable usando el +=operador. Ejemplo:
+                  yards+= 10;
+
+
+      .Incrementa: yards++;
+      .Decrementa: yards--;
+
+
+-Repeticion Codigo de bucles while
+    Los programas repiten las mismas líneas de código una y otra vez para construir todo tipo de cosas
+      .Un ciclo while repite su bloque de código mientras su condición es true.
+      .Si la condición de un bucle while se mantiene truepara siempre, lo llamamos bucle infinito
+
+-Detener bucles infinitos
+    Para detener un ciclo, comenzamos creando una variable fuera del ciclo. Ejemplo:
+                        let isOn = true;
+                                while (isOn === true) {
+                                      console.log("Now Playing: Yummy");
+                                      isOn = false;
+                                      }
+    .El bucle ejecuta todo su bloque de código porque keepGoing es true al principio, pero no se ejecuta de nuevo si lo configuramos keepGoing en false.
+
+
+- Control de bucles while
+        .Para controlar las veces whileque se repite un ciclo, comenzamos con una variable establecida en un número. Llamamos a esta variable una variable de contador .
+        .Luego, usamos una comparación en la condición para comparar la variable de contador con un número.
+        .Dentro del bloque de código, hacemos que la condición regrese false y detenemos el ciclo incrementando la variable contado
+        .Cambiar la condición le dice al bucle cuándo detenerse
+        .Cambiar el valor de la variable de contador cambia cuando comienza el ciclo.
+        .Para que el ciclo se detenga, incremente la variable de contador dentro del bloque de código.
+
+
+-Repeticion de codigo con bucles for
+
+      .Un bucle for nos permite crear la variable de contador dentro de los paréntesis, como let counter = 1;
+      .Sabemos cómo repetir código usando un bucle while.
+
+                        let counter1 = 0;
+                          while (counter1 < 5) {
+                                                console.log("**********---------");
+                                                counter1++;
+                                                }
+
+      .Para crear un bucle for, comenzamos con la for palabra clave, paréntesis ( )y llaves { }
+      .Un nombre común para una variable de contador es la letra i que significa índice.
+      .Después del punto y coma, colocamos una condición como i < 5y agregamos otro punto y coma ;.
+      .Por último, incrementamos la variable contador con i++.
+
+                  Es igual pero resumido:
+                            for (let i = 0; i < 4; i++) {
+                                                console.log("**********---------");
+                                                }
+
+
+      ¿Por qué el código de un ciclo for es más fácil de leer que el código de un ciclo while?
+          Porque la cantidad de veces que se repite el ciclo for está en un solo lugar.
+
+
+      .Si queres decrementar, la variable tiene que estar en i--;
+       

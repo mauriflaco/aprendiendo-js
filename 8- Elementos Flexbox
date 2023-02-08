@@ -1,0 +1,28 @@
+-Configuracion de un tamaño de elemento inicial
+      Aprendamos cómo configurar el tamaño de los elementos flexibles.
+
+      Para cambiar el tamaño de los elementos flexibles en el eje principal, usamos la flex-basis propiedad.
+
+      flex-basis es una propiedad de elementos flexibles . Las propiedades de elementos flexibles solo funcionan dentro de las reglas de elementos flexibles y no funcionan dentro de las reglas de contenedores flexibles.
+
+      Podemos establecer el tamaño de los elementos con valores de píxeles, como 100px como en porcentaje.
+      flex-basis: 100px;
+      flex-basis: 50%;
+
+  - Crecimiento de elementos flexibles:
+      Para controlar cómo crece un elemento flexible a lo largo de su eje principal, usamos flex-grow dentro de una regla de elemento flexible.
+      El valor predeterminado para flex-grow es 0
+
+      Aquí, el primer elemento flexible tiene flex-grow: 1;, mientras que el segundo está configurado por defecto, 0. El que tiene el número más grande ocupa más espacio.
+
+      el flex-grow se adapta al maximo ancho o alto del contenedor. Le da prioridad de ancho/alto al que mayor nro tenga.
+
+  - Reduccion de elementos flexibles:
+      Los artículos flexibles se encogen cuando no pueden expandirse a su flex-basis
+      Para hacer que un artículo flexible se encoja más que otros, le damos un flex-shrink número mayor
+
+
+      Aprendamos cómo combinar flex-grow, flex-shrinky flex-basis en una sola propiedad para crear resultados interesantes. En lugar de escribir siempre las 3 propiedades, podemos usar la flex abreviatura.
+          flex: 0 1 auto;
+
+          El flex se aplica dentro de la regla para el elemento flexible
